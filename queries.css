@@ -1,0 +1,20 @@
+@media (max-width: 75em) {
+  .nft-component {
+    max-width: 25rem;
+  }
+}
+
+@media (max-width: 56em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .nft-component {
+    max-width: 20rem;
+  }
+
+  .hover-svg {
+    width: 15%;
+  }
+}

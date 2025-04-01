@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Outfit";
+}
+
+.nft-section {
+  max-width: 144rem;
+  margin: 0 auto;
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nft-component {
+  max-width: 32rem;
+  padding: 1.5rem 1.5rem;
+  border-radius: 10px;
+  background-color: hsl(216, 50%, 16%);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title {
+  display: inline;
+  color: hsl(0, 0%, 100%);
+}
+.description {
+  font-size: 1.5rem;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+.icon-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.etherium,
+.clock {
+  display: flex;
+  gap: 10px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.etherium {
+  color: hsl(178, 100%, 50%);
+}
+
+.clock {
+  color: hsl(215, 51%, 70%);
+}
+
+.icons {
+  width: 15%;
+  /* width: 200px; */
+  /* Set desired width */
+  /* height: auto; */
+}
+
+.line {
+  /* border: 1px solid hsl(215, 32%, 23%); */
+  /* height: 0.5px; */
+  /* background-color: hsl(215, 32%, 27%); */
+  box-shadow: 0 0 0 0.1px hsl(215, 51%, 70%);
+  /* Creates a shadow that looks like a border */
+}
+
+.author-section {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.author-image {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #fdf2e9;
+}
+
+.author-name {
+  color: hsl(215, 51%, 70%);
+  font-size: 1.2rem;
+}
+
+.author-name span {
+  color: hsl(0, 0%, 100%);
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+a:link,
+a:visited {
+}
+a:hover,
+a:active {
+  color: hsl(178, 100%, 50%);
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(178, 100%, 50%, 0.363);
+  opacity: 0;
+  /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  border-radius: 5px;
+}
+
+.image-container:hover .overlay,
+.image-container:hover .hover-svg {
+  opacity: 1; /* Show overlay on hover */
+}
+
+h1 {
+  display: inline-block;
+  /* margin-top: 20px; */
+}
+
+.hover-svg {
+  position: absolute; /* Positioned relative to .image-container */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to center */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth transition for overlay */
+}
