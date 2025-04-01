@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #0d192c;
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 35rem;
+  background-color: #15263f;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.card__image-box {
+  border-radius: 10px;
+  position: relative;
+  display: block;
+  z-index: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.card__image-box--overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00fff8;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.card__image-box--overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card__image-box:hover .card__image-box--overlay {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.card__image {
+  width: 100%;
+  height: 100%;
+}
+.card__heading {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.card__description {
+  color: #8bacd9;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 26px;
+}
+.card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__price {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #00fff8;
+}
+.card__time-left {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #8bacd9;
+}
+.card__line {
+  width: 100%;
+  height: 1px;
+  background-color: #2e405a;
+}
+.card__creator {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.card__creator p {
+  font-size: 1.6rem;
+  color: #8bacd9;
+}
+.card__creator span {
+  color: #ffffff;
+}
+.card__creator-image {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}/*# sourceMappingURL=main.css.map */

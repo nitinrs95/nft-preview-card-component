@@ -1,3 +1,5 @@
+@use "../abstracts/" as a;
+
 *,
 *::after,
 *::before {
@@ -12,4 +14,14 @@ html {
 
 body {
   box-sizing: border-box;
+  background-color: a.$color-very-dark-blue-main;
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

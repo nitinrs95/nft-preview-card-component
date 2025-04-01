@@ -3,18 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    <!__ displays site properly based on user's device __>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <title>Frontend Mentor | NFT preview card component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!__ Feel free to remove these styles or customise in your own stylesheet 👍 __>
     <style>
       .attribution {
         font-size: 11px;
@@ -28,40 +34,43 @@
   <body>
     <main>
       <div class="card">
-        <div class="card--image-box">
+        <div class="card__image-box">
           <img
-            class="card--image"
-            src="./images/icon-ethereum.svg"
+            class="card__image"
+            src="./images/image-equilibrium.jpg"
             alt="Equilibrium Artwork"
           />
+          <div class="card__image-box--overlay">
+            <img src="./images/icon-view.svg" alt="" />
+          </div>
         </div>
-        <h2 class="card--title">Equilibrium #3429</h2>
-        <p class="card--description">
+
+        <h2 class="card__heading">Equilibrium #3429</h2>
+        <p class="card__description">
           Our Equilibrium collection promotes balance and calm.
         </p>
-        <div class="card--content">
-          <p class="card--price">
+        <div class="card__content">
+          <span class="card__price">
             <img
               src="./images/icon-ethereum.svg"
               alt="Etherium Icon"
               class=""
-            /><span>0.041 ETH</span>
-          </p>
-          <p class="card--time-left">
-            <img src="./images/icon-clock.svg" alt="Clock Icon" /><span
-              >3 days left</span
-            >
-          </p>
+            />0.041 ETH
+          </span>
+          <span class="card__time-left">
+            <img src="./images/icon-clock.svg" alt="Clock Icon" />3 days left
+          </span>
         </div>
-        <div class="card--line"></div>
-        <div class="card--creator">
+        <div class="card__line"></div>
+        <div class="card__creator">
           <img
             src="./images/image-avatar.png"
             alt="Creator Image"
-            class="card--creator-image"
+            class="card__creator-image"
           />
+
           <p>
-            Creation of <span class="card--creator-name">Jules Wyvern</span>
+            Creation of <span class="card__creator-name">Jules Wyvern</span>
           </p>
         </div>
       </div>
